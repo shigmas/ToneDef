@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -126,13 +127,13 @@
                                 <exclude reference="bCR-ik-vaF"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="BrN-TK-FcV"/>
-                                <exclude reference="YCM-CS-adz"/>
-                                <exclude reference="yV9-ha-Zzw"/>
                                 <exclude reference="qfs-r1-qim"/>
                                 <exclude reference="xMf-0g-nnB"/>
                                 <exclude reference="9uj-us-cjO"/>
                                 <exclude reference="nh2-Ah-sJ9"/>
+                                <exclude reference="BrN-TK-FcV"/>
+                                <exclude reference="YCM-CS-adz"/>
+                                <exclude reference="yV9-ha-Zzw"/>
                                 <exclude reference="L3y-nd-m3E"/>
                             </mask>
                         </variation>
@@ -142,19 +143,20 @@
                                 <include reference="bCR-ik-vaF"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="BrN-TK-FcV"/>
-                                <include reference="YCM-CS-adz"/>
-                                <include reference="yV9-ha-Zzw"/>
                                 <include reference="qfs-r1-qim"/>
                                 <include reference="xMf-0g-nnB"/>
                                 <include reference="9uj-us-cjO"/>
                                 <include reference="nh2-Ah-sJ9"/>
+                                <include reference="BrN-TK-FcV"/>
+                                <include reference="YCM-CS-adz"/>
+                                <include reference="yV9-ha-Zzw"/>
                                 <include reference="L3y-nd-m3E"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="amplitudeTextBox" destination="k1Y-Wy-eVp" id="BwH-h3-akI"/>
+                        <outlet property="enableButton" destination="MRe-ij-MMc" id="HRT-YW-gSQ"/>
                         <outlet property="frequencyTextBox" destination="vrS-au-Tsj" id="6iS-sO-DEk"/>
                         <outlet property="noteTextBox" destination="bCR-ik-vaF" id="Haq-yD-7Dz"/>
                         <outlet property="skView" destination="ajX-5T-Obn" id="b1i-FB-9zP"/>

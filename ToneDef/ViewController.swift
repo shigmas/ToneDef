@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var amplitudeTextBox: UITextField!
     @IBOutlet weak var noteTextBox: UITextField!
     @IBOutlet weak var skView: SKView!
+    @IBOutlet weak var enableButton: UIButton!
 
     var converter: FrequencyConverter
     var scene: SKScene = SKScene()
@@ -149,7 +150,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self._setupSKView()
-        
+        self.enableButton.setTitle("Start", forState: .Normal)
+
         AKSettings.shared().audioInputEnabled = true
         microphone = AKMicrophone()
         analyzer = AKAudioAnalyzer(input: microphone!.output)
@@ -164,6 +166,7 @@ class ViewController: UIViewController {
 
     func _toggleRunning() {
         if self.running {
+            self.enableButton.setTitle("Start", forState: .Normal)
             self.running = false
             microphone!.stop()
             analyzer!.stop()
@@ -174,6 +177,7 @@ class ViewController: UIViewController {
                 self.timer = nil
             }
         } else {
+            self.enableButton.setTitle("Stop", forState: .Normal)
             self.running = true
             if (self.timer == nil) {
                 self.timer = NSTimer(timeInterval: 0.01, target: self,
