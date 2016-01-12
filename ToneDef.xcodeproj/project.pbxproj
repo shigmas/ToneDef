@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		93D9EA6C1C3CA59900476C92 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D9EA6B1C3CA59900476C92 /* SpriteKit.framework */; };
+		93D9EA9C1C3D8CC600476C92 /* notes.json in Resources */ = {isa = PBXBuildFile; fileRef = 93D9EA9B1C3D8CC600476C92 /* notes.json */; };
+		93D9EA9E1C3D8FA400476C92 /* FrequencyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D9EA9D1C3D8FA400476C92 /* FrequencyConverter.swift */; };
+		93D9EA9F1C3DD0A300476C92 /* notes.json in Resources */ = {isa = PBXBuildFile; fileRef = 93D9EA9B1C3D8CC600476C92 /* notes.json */; };
+		93D9EAA81C40277100476C92 /* bass.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D9EAA51C40277100476C92 /* bass.png */; };
+		93D9EAA91C40277100476C92 /* treble.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D9EAA61C40277100476C92 /* treble.png */; };
+		93D9EAAA1C40277100476C92 /* whole.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D9EAA71C40277100476C92 /* whole.png */; };
+		93D9EAAC1C402B0400476C92 /* LineNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D9EAAB1C402B0400476C92 /* LineNode.swift */; };
+		93E84BC31C3641F900AC6AEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E84BC21C3641F900AC6AEF /* AppDelegate.swift */; };
+		93E84BC51C3641F900AC6AEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E84BC41C3641F900AC6AEF /* ViewController.swift */; };
+		93E84BC81C3641F900AC6AEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93E84BC61C3641F900AC6AEF /* Main.storyboard */; };
+		93E84BCB1C3641FA00AC6AEF /* ToneDef.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93E84BC91C3641FA00AC6AEF /* ToneDef.xcdatamodeld */; };
+		93E84BCD1C3641FA00AC6AEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93E84BCC1C3641FA00AC6AEF /* Assets.xcassets */; };
+		93E84BD01C3641FA00AC6AEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93E84BCE1C3641FA00AC6AEF /* LaunchScreen.storyboard */; };
+		93E84BDB1C3641FA00AC6AEF /* ToneDefTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E84BDA1C3641FA00AC6AEF /* ToneDefTests.swift */; };
+		93E84BE61C3641FA00AC6AEF /* ToneDefUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E84BE51C3641FA00AC6AEF /* ToneDefUITests.swift */; };
+		BACE1AD4AEB285683DF8E28D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF1FE579BBD83035E57AFEBA /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		93E84BD71C3641FA00AC6AEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93E84BB71C3641F900AC6AEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93E84BBE1C3641F900AC6AEF;
+			remoteInfo = ToneDef;
+		};
+		93E84BE21C3641FA00AC6AEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93E84BB71C3641F900AC6AEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93E84BBE1C3641F900AC6AEF;
+			remoteInfo = ToneDef;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8F35AB88AD839880BE01A770 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		93D9EA6B1C3CA59900476C92 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		93D9EA9B1C3D8CC600476C92 /* notes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = notes.json; sourceTree = "<group>"; };
+		93D9EA9D1C3D8FA400476C92 /* FrequencyConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrequencyConverter.swift; sourceTree = "<group>"; };
+		93D9EAA51C40277100476C92 /* bass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bass.png; sourceTree = "<group>"; };
+		93D9EAA61C40277100476C92 /* treble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treble.png; sourceTree = "<group>"; };
+		93D9EAA71C40277100476C92 /* whole.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whole.png; sourceTree = "<group>"; };
+		93D9EAAB1C402B0400476C92 /* LineNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineNode.swift; sourceTree = "<group>"; };
+		93E84BBF1C3641F900AC6AEF /* ToneDef.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToneDef.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93E84BC21C3641F900AC6AEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		93E84BC41C3641F900AC6AEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		93E84BC71C3641F900AC6AEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		93E84BCA1C3641FA00AC6AEF /* ToneDef.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToneDef.xcdatamodel; sourceTree = "<group>"; };
+		93E84BCC1C3641FA00AC6AEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93E84BCF1C3641FA00AC6AEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		93E84BD11C3641FA00AC6AEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93E84BD61C3641FA00AC6AEF /* ToneDefTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToneDefTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93E84BDA1C3641FA00AC6AEF /* ToneDefTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToneDefTests.swift; sourceTree = "<group>"; };
+		93E84BDC1C3641FA00AC6AEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93E84BE11C3641FA00AC6AEF /* ToneDefUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToneDefUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93E84BE51C3641FA00AC6AEF /* ToneDefUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToneDefUITests.swift; sourceTree = "<group>"; };
+		93E84BE71C3641FA00AC6AEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93E84BF31C36439300AC6AEF /* AKBridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AKBridging-Header.h"; sourceTree = "<group>"; };
+		DF1FE579BBD83035E57AFEBA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCF7913DE71EFAD0EF56E3CB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93E84BBC1C3641F900AC6AEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93D9EA6C1C3CA59900476C92 /* SpriteKit.framework in Frameworks */,
+				BACE1AD4AEB285683DF8E28D /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93E84BD31C3641FA00AC6AEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93E84BDE1C3641FA00AC6AEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65BA6AB776A7FC99DB464EC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93D9EA6B1C3CA59900476C92 /* SpriteKit.framework */,
+				DF1FE579BBD83035E57AFEBA /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		93E84BB61C3641F900AC6AEF = {
+			isa = PBXGroup;
+			children = (
+				93E84BF31C36439300AC6AEF /* AKBridging-Header.h */,
+				93D9EA9B1C3D8CC600476C92 /* notes.json */,
+				93D9EAA51C40277100476C92 /* bass.png */,
+				93D9EAA61C40277100476C92 /* treble.png */,
+				93D9EAA71C40277100476C92 /* whole.png */,
+				93E84BC11C3641F900AC6AEF /* ToneDef */,
+				93E84BD91C3641FA00AC6AEF /* ToneDefTests */,
+				93E84BE41C3641FA00AC6AEF /* ToneDefUITests */,
+				93E84BC01C3641F900AC6AEF /* Products */,
+				AD8E199CAE06265CF685095C /* Pods */,
+				65BA6AB776A7FC99DB464EC7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		93E84BC01C3641F900AC6AEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93E84BBF1C3641F900AC6AEF /* ToneDef.app */,
+				93E84BD61C3641FA00AC6AEF /* ToneDefTests.xctest */,
+				93E84BE11C3641FA00AC6AEF /* ToneDefUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93E84BC11C3641F900AC6AEF /* ToneDef */ = {
+			isa = PBXGroup;
+			children = (
+				93D9EA9D1C3D8FA400476C92 /* FrequencyConverter.swift */,
+				93E84BC21C3641F900AC6AEF /* AppDelegate.swift */,
+				93D9EAAB1C402B0400476C92 /* LineNode.swift */,
+				93E84BC41C3641F900AC6AEF /* ViewController.swift */,
+				93E84BC61C3641F900AC6AEF /* Main.storyboard */,
+				93E84BCC1C3641FA00AC6AEF /* Assets.xcassets */,
+				93E84BCE1C3641FA00AC6AEF /* LaunchScreen.storyboard */,
+				93E84BD11C3641FA00AC6AEF /* Info.plist */,
+				93E84BC91C3641FA00AC6AEF /* ToneDef.xcdatamodeld */,
+			);
+			path = ToneDef;
+			sourceTree = "<group>";
+		};
+		93E84BD91C3641FA00AC6AEF /* ToneDefTests */ = {
+			isa = PBXGroup;
+			children = (
+				93E84BDA1C3641FA00AC6AEF /* ToneDefTests.swift */,
+				93E84BDC1C3641FA00AC6AEF /* Info.plist */,
+			);
+			path = ToneDefTests;
+			sourceTree = "<group>";
+		};
+		93E84BE41C3641FA00AC6AEF /* ToneDefUITests */ = {
+			isa = PBXGroup;
+			children = (
+				93E84BE51C3641FA00AC6AEF /* ToneDefUITests.swift */,
+				93E84BE71C3641FA00AC6AEF /* Info.plist */,
+			);
+			path = ToneDefUITests;
+			sourceTree = "<group>";
+		};
+		AD8E199CAE06265CF685095C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F35AB88AD839880BE01A770 /* Pods.debug.xcconfig */,
+				FCF7913DE71EFAD0EF56E3CB /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93E84BBE1C3641F900AC6AEF /* ToneDef */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93E84BEA1C3641FA00AC6AEF /* Build configuration list for PBXNativeTarget "ToneDef" */;
+			buildPhases = (
+				30F529AA8119CBB8884EBE3F /* Check Pods Manifest.lock */,
+				93E84BBB1C3641F900AC6AEF /* Sources */,
+				93E84BBC1C3641F900AC6AEF /* Frameworks */,
+				93E84BBD1C3641F900AC6AEF /* Resources */,
+				E98BA50CD1B7345A808454D8 /* Embed Pods Frameworks */,
+				99B698F2A7E1E9950BD62F51 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToneDef;
+			productName = ToneDef;
+			productReference = 93E84BBF1C3641F900AC6AEF /* ToneDef.app */;
+			productType = "com.apple.product-type.application";
+		};
+		93E84BD51C3641FA00AC6AEF /* ToneDefTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93E84BED1C3641FA00AC6AEF /* Build configuration list for PBXNativeTarget "ToneDefTests" */;
+			buildPhases = (
+				93E84BD21C3641FA00AC6AEF /* Sources */,
+				93E84BD31C3641FA00AC6AEF /* Frameworks */,
+				93E84BD41C3641FA00AC6AEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93E84BD81C3641FA00AC6AEF /* PBXTargetDependency */,
+			);
+			name = ToneDefTests;
+			productName = ToneDefTests;
+			productReference = 93E84BD61C3641FA00AC6AEF /* ToneDefTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		93E84BE01C3641FA00AC6AEF /* ToneDefUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93E84BF01C3641FA00AC6AEF /* Build configuration list for PBXNativeTarget "ToneDefUITests" */;
+			buildPhases = (
+				93E84BDD1C3641FA00AC6AEF /* Sources */,
+				93E84BDE1C3641FA00AC6AEF /* Frameworks */,
+				93E84BDF1C3641FA00AC6AEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93E84BE31C3641FA00AC6AEF /* PBXTargetDependency */,
+			);
+			name = ToneDefUITests;
+			productName = ToneDefUITests;
+			productReference = 93E84BE11C3641FA00AC6AEF /* ToneDefUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93E84BB71C3641F900AC6AEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Futomen;
+				TargetAttributes = {
+					93E84BBE1C3641F900AC6AEF = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					93E84BD51C3641FA00AC6AEF = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 93E84BBE1C3641F900AC6AEF;
+					};
+					93E84BE01C3641FA00AC6AEF = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 93E84BBE1C3641F900AC6AEF;
+					};
+				};
+			};
+			buildConfigurationList = 93E84BBA1C3641F900AC6AEF /* Build configuration list for PBXProject "ToneDef" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 93E84BB61C3641F900AC6AEF;
+			productRefGroup = 93E84BC01C3641F900AC6AEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93E84BBE1C3641F900AC6AEF /* ToneDef */,
+				93E84BD51C3641FA00AC6AEF /* ToneDefTests */,
+				93E84BE01C3641FA00AC6AEF /* ToneDefUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93E84BBD1C3641F900AC6AEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93E84BD01C3641FA00AC6AEF /* LaunchScreen.storyboard in Resources */,
+				93D9EAA91C40277100476C92 /* treble.png in Resources */,
+				93D9EAA81C40277100476C92 /* bass.png in Resources */,
+				93E84BCD1C3641FA00AC6AEF /* Assets.xcassets in Resources */,
+				93E84BC81C3641F900AC6AEF /* Main.storyboard in Resources */,
+				93D9EA9C1C3D8CC600476C92 /* notes.json in Resources */,
+				93D9EAAA1C40277100476C92 /* whole.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93E84BD41C3641FA00AC6AEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93D9EA9F1C3DD0A300476C92 /* notes.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93E84BDF1C3641FA00AC6AEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30F529AA8119CBB8884EBE3F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		99B698F2A7E1E9950BD62F51 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E98BA50CD1B7345A808454D8 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93E84BBB1C3641F900AC6AEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93E84BCB1C3641FA00AC6AEF /* ToneDef.xcdatamodeld in Sources */,
+				93D9EAAC1C402B0400476C92 /* LineNode.swift in Sources */,
+				93D9EA9E1C3D8FA400476C92 /* FrequencyConverter.swift in Sources */,
+				93E84BC51C3641F900AC6AEF /* ViewController.swift in Sources */,
+				93E84BC31C3641F900AC6AEF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93E84BD21C3641FA00AC6AEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93E84BDB1C3641FA00AC6AEF /* ToneDefTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93E84BDD1C3641FA00AC6AEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93E84BE61C3641FA00AC6AEF /* ToneDefUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		93E84BD81C3641FA00AC6AEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93E84BBE1C3641F900AC6AEF /* ToneDef */;
+			targetProxy = 93E84BD71C3641FA00AC6AEF /* PBXContainerItemProxy */;
+		};
+		93E84BE31C3641FA00AC6AEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93E84BBE1C3641F900AC6AEF /* ToneDef */;
+			targetProxy = 93E84BE21C3641FA00AC6AEF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		93E84BC61C3641F900AC6AEF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93E84BC71C3641F900AC6AEF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		93E84BCE1C3641FA00AC6AEF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93E84BCF1C3641FA00AC6AEF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93E84BE81C3641FA00AC6AEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		93E84BE91C3641FA00AC6AEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		93E84BEB1C3641FA00AC6AEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F35AB88AD839880BE01A770 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ToneDef/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.futomen.ToneDef;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AKBridging-Header.h";
+			};
+			name = Debug;
+		};
+		93E84BEC1C3641FA00AC6AEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCF7913DE71EFAD0EF56E3CB /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ToneDef/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.futomen.ToneDef;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AKBridging-Header.h";
+			};
+			name = Release;
+		};
+		93E84BEE1C3641FA00AC6AEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ToneDefTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.futomen.ToneDefTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToneDef.app/ToneDef";
+			};
+			name = Debug;
+		};
+		93E84BEF1C3641FA00AC6AEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ToneDefTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.futomen.ToneDefTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToneDef.app/ToneDef";
+			};
+			name = Release;
+		};
+		93E84BF11C3641FA00AC6AEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ToneDefUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.futomen.ToneDefUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ToneDef;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		93E84BF21C3641FA00AC6AEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ToneDefUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.futomen.ToneDefUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ToneDef;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93E84BBA1C3641F900AC6AEF /* Build configuration list for PBXProject "ToneDef" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93E84BE81C3641FA00AC6AEF /* Debug */,
+				93E84BE91C3641FA00AC6AEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93E84BEA1C3641FA00AC6AEF /* Build configuration list for PBXNativeTarget "ToneDef" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93E84BEB1C3641FA00AC6AEF /* Debug */,
+				93E84BEC1C3641FA00AC6AEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93E84BED1C3641FA00AC6AEF /* Build configuration list for PBXNativeTarget "ToneDefTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93E84BEE1C3641FA00AC6AEF /* Debug */,
+				93E84BEF1C3641FA00AC6AEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93E84BF01C3641FA00AC6AEF /* Build configuration list for PBXNativeTarget "ToneDefUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93E84BF11C3641FA00AC6AEF /* Debug */,
+				93E84BF21C3641FA00AC6AEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		93E84BC91C3641FA00AC6AEF /* ToneDef.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				93E84BCA1C3641FA00AC6AEF /* ToneDef.xcdatamodel */,
+			);
+			currentVersion = 93E84BCA1C3641FA00AC6AEF /* ToneDef.xcdatamodel */;
+			path = ToneDef.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 93E84BB71C3641F900AC6AEF /* Project object */;
+}
