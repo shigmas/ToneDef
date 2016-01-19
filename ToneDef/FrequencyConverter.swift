@@ -135,7 +135,7 @@ public class FrequencyConverter {
 
     func _getNumExtraStaves(index: Int) -> (Int, StaffLineDirection) {
         let lowerBound = getIndexForName("G2")
-        let upperBound = getIndexForName("G5")
+        let upperBound = getIndexForName("G#5/Ab5")
         var direction: StaffLineDirection = .Up
         var extra = 0
         if index < lowerBound {
@@ -153,10 +153,12 @@ public class FrequencyConverter {
             let diff = index - upperBound
             if diff < 1 {
                 extra = 0
-            } else if diff < 5 {
+            } else if diff < 4 {
                 extra = 1
-            } else {
+            } else if diff < 8 {
                 extra = 2
+            } else {
+                extra = 3
             }
         }
 

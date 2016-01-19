@@ -202,6 +202,10 @@ class ViewController: UIViewController {
             return
         }
 
+        if anal.trackedAmplitude.value < 0.01 {
+            return
+        }
+
         frequencyField.text = String(format: "%f",
             arguments: [anal.trackedFrequency.value])
         var noteIndex: Int?
@@ -209,10 +213,6 @@ class ViewController: UIViewController {
         (noteIndex, ratio) = converter.getNote(anal.trackedFrequency.value)
         print("note: \(noteIndex), ratio: \(ratio)")
         noteField.text = converter.getNameForIndex(noteIndex)
-
-        if anal.trackedAmplitude.value < 0.01 {
-            return
-        }
 
         var position: CGFloat?
         var addOns: NoteAddOns?
@@ -248,7 +248,7 @@ class ViewController: UIViewController {
                     let (top, _) = converter.noteToPosition(topIndex)
                     for i in 0...numExtraStaves-1 {
                         curPos = self.extraStaffLines[i].position
-                        curPos.y = top! + CGFloat(i+1) * StaffInterval
+                        curPos.y = top! + CGFloat(i+1) * StaffInterval + 0.5 * StaffInterval
                         self.extraStaffLines[i].position = curPos
                         self.extraStaffLines[i].hidden = false
                     }
