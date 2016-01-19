@@ -19,9 +19,9 @@ class ViewController: UIViewController {
 
     private var analyzer: AKAudioAnalyzer?
     private var microphone: AKMicrophone?
-    @IBOutlet weak var frequencyTextBox: UITextField!
-    @IBOutlet weak var amplitudeTextBox: UITextField!
-    @IBOutlet weak var noteTextBox: UITextField!
+    
+    @IBOutlet weak var frequencyField: UILabel!
+    @IBOutlet weak var noteField: UILabel!
     @IBOutlet weak var skView: SKView!
     @IBOutlet weak var enableButton: UIButton!
 
@@ -63,6 +63,7 @@ class ViewController: UIViewController {
 
     var running = false
 
+    
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         converter = FrequencyConverter(tablePath: "notes",
             staffInterval: StaffInterval, staffSpace: StaffSpace,
@@ -150,6 +151,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self._setupSKView()
+
         self.enableButton.setTitle("Start", forState: .Normal)
 
         AKSettings.shared().audioInputEnabled = true
@@ -200,15 +202,13 @@ class ViewController: UIViewController {
             return
         }
 
-        frequencyTextBox.text = String(format: "%f",
+        frequencyField.text = String(format: "%f",
             arguments: [anal.trackedFrequency.value])
-        amplitudeTextBox.text = String(format: "%f",
-            arguments: [anal.trackedAmplitude.value])
         var noteIndex: Int?
         var ratio: Float?
         (noteIndex, ratio) = converter.getNote(anal.trackedFrequency.value)
         print("note: \(noteIndex), ratio: \(ratio)")
-        noteTextBox.text = converter.getNameForIndex(noteIndex)
+        noteField.text = converter.getNameForIndex(noteIndex)
 
         if anal.trackedAmplitude.value < 0.01 {
             return

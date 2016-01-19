@@ -143,7 +143,7 @@ public class FrequencyConverter {
             let diff = lowerBound - index
             if diff < 3 {
                 extra = 0
-            } else if diff < 5 {
+            } else if diff < 7 {
                 extra = 1
             } else {
                 extra = 2
@@ -153,7 +153,7 @@ public class FrequencyConverter {
             let diff = index - upperBound
             if diff < 1 {
                 extra = 0
-            } else if diff < 4 {
+            } else if diff < 5 {
                 extra = 1
             } else {
                 extra = 2
@@ -216,7 +216,7 @@ public class FrequencyConverter {
             accidentalType = .SharpType
         } else if octaveOffset == 4 {
             // E
-            needsStave = !evenOctave
+            needsStave = evenOctave
             position += increment * 2.0
         } else if octaveOffset == 5 {
             // F
@@ -247,6 +247,7 @@ public class FrequencyConverter {
             accidentalType = .SharpType
         } else if octaveOffset == 11 {
             // B
+            needsStave = evenOctave
             position += increment * 6.0
         }
 
