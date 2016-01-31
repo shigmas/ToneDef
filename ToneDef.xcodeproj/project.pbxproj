@@ -12,6 +12,8 @@
 		9370CE0C1C4C4BB70036F5A5 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 9370CE0B1C4C4BB70036F5A5 /* about.html */; };
 		9370CE0E1C4DA8B70036F5A5 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9370CE0D1C4DA8B70036F5A5 /* SafariServices.framework */; };
 		9370CE101C4DAB4F0036F5A5 /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9370CE0F1C4DAB4F0036F5A5 /* AboutController.swift */; };
+		9379194B1C5D163A00E84DCD /* BarGraphNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9379194A1C5D163A00E84DCD /* BarGraphNode.swift */; };
+		937EE1051C5446400024F2AD /* futomen_icon_half.png in Resources */ = {isa = PBXBuildFile; fileRef = 937EE1041C5446400024F2AD /* futomen_icon_half.png */; };
 		93D9EA6C1C3CA59900476C92 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D9EA6B1C3CA59900476C92 /* SpriteKit.framework */; };
 		93D9EA9C1C3D8CC600476C92 /* notes.json in Resources */ = {isa = PBXBuildFile; fileRef = 93D9EA9B1C3D8CC600476C92 /* notes.json */; };
 		93D9EA9E1C3D8FA400476C92 /* FrequencyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D9EA9D1C3D8FA400476C92 /* FrequencyConverter.swift */; };
@@ -55,6 +57,8 @@
 		9370CE0B1C4C4BB70036F5A5 /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
 		9370CE0D1C4DA8B70036F5A5 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		9370CE0F1C4DAB4F0036F5A5 /* AboutController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutController.swift; sourceTree = "<group>"; };
+		9379194A1C5D163A00E84DCD /* BarGraphNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarGraphNode.swift; sourceTree = "<group>"; };
+		937EE1041C5446400024F2AD /* futomen_icon_half.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = futomen_icon_half.png; sourceTree = "<group>"; };
 		93D9EA6B1C3CA59900476C92 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		93D9EA9B1C3D8CC600476C92 /* notes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = notes.json; sourceTree = "<group>"; };
 		93D9EA9D1C3D8FA400476C92 /* FrequencyConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrequencyConverter.swift; sourceTree = "<group>"; };
@@ -128,6 +132,7 @@
 				93D9EAA51C40277100476C92 /* bass.png */,
 				93D9EAA61C40277100476C92 /* treble.png */,
 				93D9EAA71C40277100476C92 /* whole.png */,
+				937EE1041C5446400024F2AD /* futomen_icon_half.png */,
 				93E84BC11C3641F900AC6AEF /* ToneDef */,
 				93E84BD91C3641FA00AC6AEF /* ToneDefTests */,
 				93E84BE41C3641FA00AC6AEF /* ToneDefUITests */,
@@ -156,6 +161,7 @@
 				93E84BC21C3641F900AC6AEF /* AppDelegate.swift */,
 				9370CE0F1C4DAB4F0036F5A5 /* AboutController.swift */,
 				93D9EAAB1C402B0400476C92 /* LineNode.swift */,
+				9379194A1C5D163A00E84DCD /* BarGraphNode.swift */,
 				93E84BC41C3641F900AC6AEF /* ViewController.swift */,
 				93E84BC61C3641F900AC6AEF /* Main.storyboard */,
 				93E84BCC1C3641FA00AC6AEF /* Assets.xcassets */,
@@ -307,6 +313,7 @@
 				93E84BCD1C3641FA00AC6AEF /* Assets.xcassets in Resources */,
 				93E84BC81C3641F900AC6AEF /* Main.storyboard in Resources */,
 				93D9EA9C1C3D8CC600476C92 /* notes.json in Resources */,
+				937EE1051C5446400024F2AD /* futomen_icon_half.png in Resources */,
 				93D9EAAA1C40277100476C92 /* whole.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,6 +396,7 @@
 				9370CE071C4C4A200036F5A5 /* PreferencesController.swift in Sources */,
 				93E84BC31C3641F900AC6AEF /* AppDelegate.swift in Sources */,
 				9370CE101C4DAB4F0036F5A5 /* AboutController.swift in Sources */,
+				9379194B1C5D163A00E84DCD /* BarGraphNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

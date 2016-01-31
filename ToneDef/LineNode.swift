@@ -13,35 +13,42 @@ enum LineNodeDirection {
     case Vertical
 }
 
-enum LineNodeType {
-    case DoubleLine
-    case SingleLine
-}
-
 class LineNode: SKShapeNode {
+
+    let DefaultLength: CGFloat = 1.0
+    var lineDirection: LineNodeDirection
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
-    init(lineType: LineNodeDirection, lineThickness: LineNodeType) {
-        super.init()
-        let pathToDraw = CGPathCreateMutable()
-        CGPathMoveToPoint(pathToDraw, nil, 0.0, 0.0);
-        switch lineType {
-        case .Horizontal:
-            CGPathAddLineToPoint(pathToDraw, nil, 50.0, 0.0);
-        case .Vertical:
-            CGPathAddLineToPoint(pathToDraw, nil, 0.0, 50.0);
+    // Use this instead of scale
+    var length: CGFloat {
+        didSet {
+            print("old: \(oldValue), new: \(self.length)")
+            let pathToDraw = CGPathCreateMutable()
+            CGPathMoveToPoint(pathToDraw, nil, 0.0, 0.0)
+            switch self.lineDirection {
+            case .Horizontal:
+                CGPathAddLineToPoint(pathToDraw, nil, self.length, 0.0);
+            case .Vertical:
+                CGPathAddLineToPoint(pathToDraw, nil, 0.0, self.length);
+            }
+            self.path = pathToDraw
         }
+    }
 
-        self.path = pathToDraw
-        switch lineThickness {
-        case .DoubleLine:
-            self.lineWidth = 1.0
-        case .SingleLine:
-            self.lineWidth = 0.5
+    init(direction: LineNodeDirection) {
+        self.lineDirection = direction
+        self.length = DefaultLength
+        super.init()
+        switch self.lineDirection {
+        case .Horizontal:
+            self.yScale = 0.01
+        case .Vertical:
+            self.xScale = 0.01
         }
+        self.lineWidth = 0.1
         self.fillColor = SKColor.blackColor()
         self.strokeColor = SKColor.blackColor()
     }
