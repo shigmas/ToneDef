@@ -3,7 +3,7 @@
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "futomen_icon58.png",
+      "filename" : "tonedefB58.png",
       "scale" : "2x"
     },
     {
@@ -14,25 +14,25 @@
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "futomen_icon80.png",
+      "filename" : "tonedefB80.png",
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "futomen_icon120.png",
+      "filename" : "tonedefB120.png",
       "scale" : "3x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "futomen_icon120-1.png",
+      "filename" : "tonedefB120-1.png",
       "scale" : "2x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "futomen_icon180.png",
+      "filename" : "tonedefB180.png",
       "scale" : "3x"
     },
     {
@@ -58,13 +58,13 @@
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "futomen_icon76.png",
+      "filename" : "tonedefB76.png",
       "scale" : "1x"
     },
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "futomen_icon152.png",
+      "filename" : "tonedefB152-1.png",
       "scale" : "2x"
     },
     {

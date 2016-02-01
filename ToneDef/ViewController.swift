@@ -140,7 +140,6 @@ class ViewController: UIViewController {
         self.scene.addChild(self.note)
 
         for staffLine in self.extraStaffLines {
-            print("extra staff horiz: \(NotePosition - StaffHorizOffset)")
             staffLine.position = CGPoint(x: NotePosition - StaffHorizOffset, y: ypos!)
             staffLine.length = 0.07
             //self.extraStaffLine.hidden = true
@@ -219,7 +218,7 @@ class ViewController: UIViewController {
         var noteIndex: Int?
         var ratio: Float?
         (noteIndex, ratio) = converter.getNote(anal.trackedFrequency.value)
-        print("note: \(noteIndex), ratio: \(ratio)")
+//        print("note: \(noteIndex), ratio: \(ratio)")
         noteField.text = converter.getNameForIndex(noteIndex)
         self.offKeyGraph.ratio = CGFloat(ratio!)
         var position: CGFloat?

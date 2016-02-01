@@ -25,7 +25,6 @@ class LineNode: SKShapeNode {
     // Use this instead of scale
     var length: CGFloat {
         didSet {
-            print("old: \(oldValue), new: \(self.length)")
             let pathToDraw = CGPathCreateMutable()
             CGPathMoveToPoint(pathToDraw, nil, 0.0, 0.0)
             switch self.lineDirection {
