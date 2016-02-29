@@ -28,6 +28,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var noteField: UILabel!
     @IBOutlet weak var skView: SKView!
     @IBOutlet weak var enableButton: UIButton!
+    @IBOutlet weak var sharpFlatToggle: UISegmentedControl!
 
     var converter: FrequencyConverter
     var scene: SKScene = SKScene()
@@ -159,7 +160,21 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self._setupSKView()
 
+        self.converter.mode = Settings.sharedInstance.sharpFlatMode
         self.enableButton.setTitle("Start", forState: .Normal)
+
+        self.sharpFlatToggle.setTitle("♭", forSegmentAtIndex: 0)
+        self.sharpFlatToggle.setTitle("♯", forSegmentAtIndex: 1)
+        let toggleDict: [NSObject:AnyObject] = [NSFontAttributeName:
+            UIFont(name:"HelveticaNeue-Bold", size: 24.0)!]
+        self.sharpFlatToggle.setTitleTextAttributes(toggleDict,
+            forState: .Normal)
+        switch self.converter.mode {
+        case .FlatType:
+            self.sharpFlatToggle.selectedSegmentIndex = 0
+        default:
+            self.sharpFlatToggle.selectedSegmentIndex = 1
+        }
 
         AKSettings.shared().audioInputEnabled = true
         microphone = AKMicrophone()
@@ -202,6 +217,15 @@ class ViewController: UIViewController {
         _toggleRunning()
     }
 
+    @IBAction func onSharpFlatToggled(sender: AnyObject) {
+        if self.sharpFlatToggle.selectedSegmentIndex == 1 {
+            self.converter.mode = .SharpType
+            Settings.sharedInstance.sharpFlatMode = .SharpType
+        } else {
+            self.converter.mode = .FlatType
+            Settings.sharedInstance.sharpFlatMode = .FlatType
+        }
+    }
 
     func getInput(timer: NSTimer) -> Void {
         guard let anal = analyzer as AKAudioAnalyzer! else {

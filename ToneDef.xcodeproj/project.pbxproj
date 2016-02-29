@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		933A85211C83F3570016D0DC /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933A85201C83F3570016D0DC /* Settings.swift */; };
 		9370CE011C4C44630036F5A5 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9370CE001C4C44630036F5A5 /* NavigationController.swift */; };
 		9370CE071C4C4A200036F5A5 /* PreferencesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9370CE061C4C4A200036F5A5 /* PreferencesController.swift */; };
 		9370CE0C1C4C4BB70036F5A5 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 9370CE0B1C4C4BB70036F5A5 /* about.html */; };
@@ -52,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		8F35AB88AD839880BE01A770 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		933A85201C83F3570016D0DC /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		9370CE001C4C44630036F5A5 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		9370CE061C4C4A200036F5A5 /* PreferencesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesController.swift; sourceTree = "<group>"; };
 		9370CE0B1C4C4BB70036F5A5 /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				9370CE0F1C4DAB4F0036F5A5 /* AboutController.swift */,
 				93D9EAAB1C402B0400476C92 /* LineNode.swift */,
 				9379194A1C5D163A00E84DCD /* BarGraphNode.swift */,
+				933A85201C83F3570016D0DC /* Settings.swift */,
 				93E84BC41C3641F900AC6AEF /* ViewController.swift */,
 				93E84BC61C3641F900AC6AEF /* Main.storyboard */,
 				93E84BCC1C3641FA00AC6AEF /* Assets.xcassets */,
@@ -392,6 +395,7 @@
 				9370CE011C4C44630036F5A5 /* NavigationController.swift in Sources */,
 				93D9EAAC1C402B0400476C92 /* LineNode.swift in Sources */,
 				93D9EA9E1C3D8FA400476C92 /* FrequencyConverter.swift in Sources */,
+				933A85211C83F3570016D0DC /* Settings.swift in Sources */,
 				93E84BC51C3641F900AC6AEF /* ViewController.swift in Sources */,
 				9370CE071C4C4A200036F5A5 /* PreferencesController.swift in Sources */,
 				93E84BC31C3641F900AC6AEF /* AppDelegate.swift in Sources */,

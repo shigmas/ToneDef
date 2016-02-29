@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1kk-VL-AKQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1kk-VL-AKQ">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -24,32 +24,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xfa-op-kjS">
-                                <rect key="frame" x="128" y="101" width="345" height="144"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ajX-5T-Obn" customClass="SKView">
-                                        <rect key="frame" x="0.0" y="0.0" width="345" height="144"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="144" id="cg9-qx-ctM"/>
-                                            <constraint firstAttribute="width" constant="345" id="lFE-hY-1xS"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="144" id="ngX-I7-why"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="ngX-I7-why"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="ngX-I7-why"/>
-                                    </mask>
-                                </variation>
-                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5u4-V7-BBM">
                                 <rect key="frame" x="109" y="85" width="80" height="0.0"/>
                                 <constraints>
@@ -74,24 +48,62 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xfa-op-kjS">
+                                <rect key="frame" x="128" y="151" width="345" height="144"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ajX-5T-Obn" customClass="SKView">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="144"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="144" id="cg9-qx-ctM"/>
+                                            <constraint firstAttribute="width" constant="345" id="lFE-hY-1xS"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="144" id="ngX-I7-why"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ngX-I7-why"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="ngX-I7-why"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRe-ij-MMc">
-                                <rect key="frame" x="281" y="282" width="38" height="30"/>
+                                <rect key="frame" x="281" y="332" width="38" height="30"/>
                                 <state key="normal" title="Press"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wP3-oh-vqt"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="UYz-FR-WIN">
+                                <rect key="frame" x="240" y="115" width="121" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <connections>
+                                    <action selector="onSharpFlatToggled:" destination="BYZ-38-t0r" eventType="valueChanged" id="DRy-pD-9nK"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="MRe-ij-MMc" firstAttribute="top" secondItem="ajX-5T-Obn" secondAttribute="bottom" constant="38" id="2jb-WV-TLn"/>
-                            <constraint firstItem="xfa-op-kjS" firstAttribute="top" secondItem="5u4-V7-BBM" secondAttribute="bottom" constant="34.5" id="7U5-t3-95b"/>
+                            <constraint firstItem="UYz-FR-WIN" firstAttribute="top" secondItem="6eM-NH-wee" secondAttribute="bottom" constant="28.5" id="4mh-D4-4KV"/>
                             <constraint firstAttribute="leadingMargin" secondItem="ny6-F5-eGD" secondAttribute="leading" id="Cif-pP-mCA"/>
                             <constraint firstItem="ny6-F5-eGD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="46" id="G73-4e-fMS"/>
                             <constraint firstItem="6eM-NH-wee" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="46" id="L4e-ia-aGQ"/>
                             <constraint firstItem="5u4-V7-BBM" firstAttribute="leading" secondItem="ny6-F5-eGD" secondAttribute="trailing" constant="8" id="O5I-Ag-EJH"/>
+                            <constraint firstItem="ajX-5T-Obn" firstAttribute="top" secondItem="UYz-FR-WIN" secondAttribute="bottom" constant="8" id="Psk-eP-R2z"/>
                             <constraint firstItem="xfa-op-kjS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SQA-ag-aq0"/>
                             <constraint firstItem="5u4-V7-BBM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="46" id="Xmq-AF-v7g"/>
+                            <constraint firstItem="UYz-FR-WIN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YO2-YW-lW8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yfs-V8-7UV" secondAttribute="trailing" id="cIP-7J-Qyd"/>
                             <constraint firstItem="yfs-V8-7UV" firstAttribute="leading" secondItem="6eM-NH-wee" secondAttribute="trailing" constant="8" id="jhG-Tp-25x"/>
                             <constraint firstItem="yfs-V8-7UV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="46" id="wb8-li-0UH"/>
@@ -103,6 +115,7 @@
                         <outlet property="enableButton" destination="MRe-ij-MMc" id="HRT-YW-gSQ"/>
                         <outlet property="frequencyField" destination="5u4-V7-BBM" id="dEI-qQ-lg5"/>
                         <outlet property="noteField" destination="yfs-V8-7UV" id="iUk-cx-gWu"/>
+                        <outlet property="sharpFlatToggle" destination="UYz-FR-WIN" id="d9a-Od-ILR"/>
                         <outlet property="skView" destination="ajX-5T-Obn" id="b1i-FB-9zP"/>
                     </connections>
                 </viewController>
