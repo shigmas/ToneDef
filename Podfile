@@ -1,1 +1,3 @@
-pod 'AudioKit', '~> 2.2'
+target "ToneDef" do
+  pod 'AudioKit', '~> 2.2'
+end

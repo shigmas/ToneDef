@@ -31,7 +31,7 @@
 		93E84BD01C3641FA00AC6AEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93E84BCE1C3641FA00AC6AEF /* LaunchScreen.storyboard */; };
 		93E84BDB1C3641FA00AC6AEF /* ToneDefTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E84BDA1C3641FA00AC6AEF /* ToneDefTests.swift */; };
 		93E84BE61C3641FA00AC6AEF /* ToneDefUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E84BE51C3641FA00AC6AEF /* ToneDefUITests.swift */; };
-		BACE1AD4AEB285683DF8E28D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF1FE579BBD83035E57AFEBA /* libPods.a */; };
+		95EA916DC6158BF9A8E0345B /* libPods-ToneDef.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 370666018D3F79A1B1C0EF68 /* libPods-ToneDef.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		285A5111D51F51799A16DBAB /* Pods-ToneDef.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToneDef.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToneDef/Pods-ToneDef.release.xcconfig"; sourceTree = "<group>"; };
+		370666018D3F79A1B1C0EF68 /* libPods-ToneDef.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ToneDef.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F35AB88AD839880BE01A770 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		933A85201C83F3570016D0DC /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		9370CE001C4C44630036F5A5 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 		93E84BE51C3641FA00AC6AEF /* ToneDefUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToneDefUITests.swift; sourceTree = "<group>"; };
 		93E84BE71C3641FA00AC6AEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93E84BF31C36439300AC6AEF /* AKBridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AKBridging-Header.h"; sourceTree = "<group>"; };
+		BD3956AAE2693E07404124AA /* Pods-ToneDef.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToneDef.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToneDef/Pods-ToneDef.debug.xcconfig"; sourceTree = "<group>"; };
 		DF1FE579BBD83035E57AFEBA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF7913DE71EFAD0EF56E3CB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,7 +97,7 @@
 			files = (
 				9370CE0E1C4DA8B70036F5A5 /* SafariServices.framework in Frameworks */,
 				93D9EA6C1C3CA59900476C92 /* SpriteKit.framework in Frameworks */,
-				BACE1AD4AEB285683DF8E28D /* libPods.a in Frameworks */,
+				95EA916DC6158BF9A8E0345B /* libPods-ToneDef.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +124,7 @@
 				9370CE0D1C4DA8B70036F5A5 /* SafariServices.framework */,
 				93D9EA6B1C3CA59900476C92 /* SpriteKit.framework */,
 				DF1FE579BBD83035E57AFEBA /* libPods.a */,
+				370666018D3F79A1B1C0EF68 /* libPods-ToneDef.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -198,6 +202,8 @@
 			children = (
 				8F35AB88AD839880BE01A770 /* Pods.debug.xcconfig */,
 				FCF7913DE71EFAD0EF56E3CB /* Pods.release.xcconfig */,
+				BD3956AAE2693E07404124AA /* Pods-ToneDef.debug.xcconfig */,
+				285A5111D51F51799A16DBAB /* Pods-ToneDef.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -209,12 +215,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93E84BEA1C3641FA00AC6AEF /* Build configuration list for PBXNativeTarget "ToneDef" */;
 			buildPhases = (
-				30F529AA8119CBB8884EBE3F /* Check Pods Manifest.lock */,
+				30F529AA8119CBB8884EBE3F /* [CP] Check Pods Manifest.lock */,
 				93E84BBB1C3641F900AC6AEF /* Sources */,
 				93E84BBC1C3641F900AC6AEF /* Frameworks */,
 				93E84BBD1C3641F900AC6AEF /* Resources */,
-				E98BA50CD1B7345A808454D8 /* Embed Pods Frameworks */,
-				99B698F2A7E1E9950BD62F51 /* Copy Pods Resources */,
+				E98BA50CD1B7345A808454D8 /* [CP] Embed Pods Frameworks */,
+				99B698F2A7E1E9950BD62F51 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -339,14 +345,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		30F529AA8119CBB8884EBE3F /* Check Pods Manifest.lock */ = {
+		30F529AA8119CBB8884EBE3F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,34 +360,34 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		99B698F2A7E1E9950BD62F51 /* Copy Pods Resources */ = {
+		99B698F2A7E1E9950BD62F51 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToneDef/Pods-ToneDef-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E98BA50CD1B7345A808454D8 /* Embed Pods Frameworks */ = {
+		E98BA50CD1B7345A808454D8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToneDef/Pods-ToneDef-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -540,7 +546,7 @@
 		};
 		93E84BEB1C3641FA00AC6AEF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F35AB88AD839880BE01A770 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = BD3956AAE2693E07404124AA /* Pods-ToneDef.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ToneDef/Info.plist;
@@ -553,7 +559,7 @@
 		};
 		93E84BEC1C3641FA00AC6AEF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FCF7913DE71EFAD0EF56E3CB /* Pods.release.xcconfig */;
+			baseConfigurationReference = 285A5111D51F51799A16DBAB /* Pods-ToneDef.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ToneDef/Info.plist;
